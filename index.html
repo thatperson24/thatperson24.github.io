@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Grape Man Games </title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="banner">
+            <ul class="topNavigation">  
+                <li id="homeButton"><a href="index.html">Home</a></li>
+                <li>About Us</li>
+                <li>Products</li>
+                <li>Contacts</li>
+            </ul>
+    
+        </div>
+        <div class="gameContainer">
+            <div class="column">
+                <button class="gameButton" id="shapeTab" onmouseover="openGame('Shape Fighter')" onclick="switchWindow('ShapeFighter')">
+                    <strong>Shape Fighter</strong>
+                </button>
+                <button class="gameButton" id="climberTab" onmouseover="openGame('Grape Climber')" onclick="switchWindow('GrapeClimber')">
+                    <strong>Grape Climber</strong>
+                </button>
+                <button class="gameButton" id="buildingTab" onmouseover="openGame('Building The Game')" onclick="switchWindow('BuildingTheGame')">
+                    <strong>Building The Game</strong>
+                </button>
+                <button class="gameButton" id="grapeTab" onmouseover="openGame('Spider Fighter')" onclick="switchWindow('SpiderFighter')">
+                    <strong>Spider Fighter</strong>
+                </button>
+            </div>
+            <div class="column2">
+                <img id="gameImage" src="images/gameIcons/shape_fighter.PNG" alt="Shape Fighter Image">
+            </div>
+            <div class="column3" style="background:white">
+                <p id="gameSummary">
+                    Shape Fighter is a local multiplayer, turn-based strategy game in which players select a shape, each with a unique move-set, and battle another players shape to determine the victor
+                </p>
+            </div>
+        </div>
+        <h1 class="merchBanner">
+            <strong>Merchandise</strong>
+        </h1>
+        <div class="gridContainer">
+            <div class="merchHeaders" id="shirtH">SHIRTS</div>
+            <div class="merchIcon" id="shirtI"></div>
+            <div class="merchHeaders" id="posterH">POSTERS</div>
+            <div class="merchIcon" id="posterI"></div>
+            <div class="merchHeaders" id="toysH">TOYS</div>
+            <div class="merchIcon" id="toysI"></div>
+        </div>
+    </body>
+</html>

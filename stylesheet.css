@@ -1,0 +1,179 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin:0;
+    padding:0;
+}
+
+.topNavigation {
+    list-style-type: none;
+    text-align: center;
+}
+.topNavigation li {
+    display: inline-block;
+    padding: 20px 80px;
+    margin: 0 40px;
+    font-size: 1vw;
+    background:white;/* #9BC823; #33EB1A;*/
+    border: 5px solid #9BC823;
+    border-radius: 40px;
+}
+.topNavigation li:hover{
+    background-color:#9BC823;
+transition-duration:.5s;
+
+}
+.topNavigation li a{
+    text-decoration: none;
+    color:black;
+}
+
+.banner{
+    margin:0;
+    padding: 10px;
+    height: 700px;
+    width: auto;
+    background-image: url("images/grapeman banner.png");
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center;
+}
+.banner p{
+    font-size: 80px;
+    text-align: center;
+}
+.banner img{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    height:30%;
+    width: auto;
+}
+.gameContainer{
+    display: flex;
+    padding:100px 0;
+    background-image: url("images/grape background banner.png");
+    background-position: center;
+}
+.column{
+    flex:30%;
+    height:204px;
+}
+.column2{
+    flex:10%;
+    height:220px;
+    margin: 10px;
+}
+.column3{
+    flex:40%;
+    height:220px;
+    margin: 10px 20px;
+    border-radius:25px;
+    border: 5px solid;
+    border-color: #9BC823;
+}
+.column button{
+    padding:16px 0;
+    background:#9BC823;
+    display:block;
+    border:none;
+    margin:10px;
+    border-radius:20px;
+    width: 30vw;
+}
+.gameButton:hover
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-duration: 10s;
+    color:white;
+}
+#shapeTab:hover
+{
+    background-image: url("images/buttonBackground/shapeButtonBg.jpg");
+}
+#climberTab:hover{
+    background-image: url("images/buttonBackground/climbButtonBg.jpg");
+}
+#buildingTab:hover{
+    background-image: url("images/buttonBackground/buildingButtonBg.jpg");
+}
+#grapeTab:hover{
+    background-image: url("images/buttonBackground/grapeButtonBg.jpg");
+}
+#gameImage{
+    height:210px; 
+    border-width:5px;
+    border-radius: 50%; 
+    border: 5px solid #9BC823;
+
+}
+.column3 p{
+    margin:16px;
+    height:204px;
+}
+#shirtH{
+    grid-area: shirtH;
+}
+#shirtI{
+    grid-area: shirtI;
+}
+#posterH{
+    grid-area: posterH;
+}
+#posterI{
+    grid-area:posterI;
+}
+#toysH{
+    grid-area:toysH;
+}
+#toysI{
+    grid-area:toysI;
+}
+.merchHeaders{
+    padding:30px 0;
+}
+.merchIcon{
+    width:200px;
+    height:200px;
+    background-position:center;
+    background-size:contain;
+    margin-left:33%;
+    border-radius:50%;
+    box-shadow: -5px -4px #9BC823;
+    position:relative;
+}
+#shirtI
+{
+    background-image: url("images/merchIcon/shirtIcon.png");
+}
+#posterI
+{
+    background-image: url("images/merchIcon/posterIcon.png");
+}
+#toysI
+{
+    background-image: url("images/merchIcon/toysIcon.png");
+}
+.gridContainer{
+    display:grid;
+    grid-template-areas: 
+    "shirtH posterH toysH"
+    "shirtI posterI toysI"
+    "shirtI posterI toysI"
+    ;
+    grid-gap:4px;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+.merchBanner{
+    margin:auto; 
+    background-color: white; 
+    text-align: center; 
+    padding: 60px
+}
+.gridContainer div{
+    text-align: center;
+    color:white
+}
